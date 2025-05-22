@@ -1,0 +1,75 @@
+baseURL = 'https://example.org/'
+pagination.pagerSize = 10
+
+baseurl      = "localhost"
+title        = "My Blog"
+languageCode = "ru"
+theme        = "hello-friend-ng"
+
+[params]
+  dateform        = "May 20, 2025"
+  dateformShort   = "May 20"
+  dateformNum     = "2025-05-20"
+  dateformNumTime = "2025-05-20 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "СДО, онлайн проверка лаборатоных работ"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tag"
+    series   = "series"
+   
+
+[languages]
+  [languages.en]
+    title = "Практика"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  [languages.en.params]
+    subtitle  = "A simple theme for Hugo"
+
+    [languages.en.params.logo]
+      logoText = "Практика"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+
+[[menu.main]]
+    identifier = "about"
+    name       = "О проекте"
+    url        = "/about"
+
+[[menu.main]]
+    identifier = "participants"
+    name       = "Участники"
+    url        = "/participants"
+
+[[menu.main]]
+    identifier = "journal"
+    name       = "Журнал"
+    url        = "/journal"
+
+[[menu.main]]
+    identifier = "resources"
+    name       = "Ресурсы"
+    url        = "/resources"
